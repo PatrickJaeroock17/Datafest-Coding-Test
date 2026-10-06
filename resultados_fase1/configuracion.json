@@ -1,0 +1,148 @@
+{
+  "protocol": "fase1_v1",
+  "python": "3.14.7",
+  "packages": {
+    "numpy": "2.4.4",
+    "pandas": "3.0.2",
+    "scikit-learn": "1.9.1",
+    "catboost": "1.2.10"
+  },
+  "script_sha256": "381036910f21f04471a490bef5a52c0b39ebe841ef861a985b5f032aef9a5cfa",
+  "data_jan_oct_sha256": "453cd57de5c2c730d05915bb8c34d47b9b6883aedb9216ed400d4c2dfea60b74",
+  "months": [
+    202606,
+    202607,
+    202608,
+    202609,
+    202610
+  ],
+  "features": [
+    "edad",
+    "ingresos",
+    "ratio_deuda_ingresos",
+    "antiguedad_cuenta_meses",
+    "numero_productos",
+    "saldo_promedio",
+    "dias_ultima_transaccion",
+    "ocupacion",
+    "region",
+    "canal_adquisicion",
+    "banda_riesgo",
+    "tiene_tarjeta_credito",
+    "activo_movil",
+    "es_nuevo_cliente",
+    "tiene_prestamo",
+    "antiguedad_direccion_meses",
+    "visitas_web_ultimos_90_dias",
+    "distancia_sucursal_km",
+    "dispositivo_principal",
+    "dia_preferido_pago",
+    "tiene_seguro",
+    "saldo_ingreso_mensual",
+    "saldo_por_producto",
+    "visitas_por_producto",
+    "productos_flags",
+    "movil_x_visitas",
+    "log_ingresos",
+    "log_saldo_promedio",
+    "log_dias_ultima_transaccion",
+    "observaciones_previas",
+    "meses_desde_observacion_previa",
+    "meses_desde_primera_observacion"
+  ],
+  "feature_mode": "history",
+  "categorical_columns": [
+    "ocupacion",
+    "region",
+    "canal_adquisicion",
+    "banda_riesgo",
+    "dispositivo_principal"
+  ],
+  "class_weights": null,
+  "configs": {
+    "cat_d3_l2_3": {
+      "depth": 3,
+      "l2": 3
+    },
+    "cat_d3_l2_10": {
+      "depth": 3,
+      "l2": 10
+    },
+    "cat_d3_l2_30": {
+      "depth": 3,
+      "l2": 30
+    },
+    "cat_d3_l2_100": {
+      "depth": 3,
+      "l2": 100
+    },
+    "cat_d4_l2_3": {
+      "depth": 4,
+      "l2": 3
+    },
+    "cat_d4_l2_10": {
+      "depth": 4,
+      "l2": 10
+    },
+    "cat_d4_l2_30": {
+      "depth": 4,
+      "l2": 30
+    },
+    "cat_d4_l2_100": {
+      "depth": 4,
+      "l2": 100
+    },
+    "cat_d5_l2_3": {
+      "depth": 5,
+      "l2": 3
+    },
+    "cat_d5_l2_10": {
+      "depth": 5,
+      "l2": 10
+    },
+    "cat_d5_l2_30": {
+      "depth": 5,
+      "l2": 30
+    },
+    "cat_d5_l2_100": {
+      "depth": 5,
+      "l2": 100
+    },
+    "cat_d6_l2_3": {
+      "depth": 6,
+      "l2": 3
+    },
+    "cat_d6_l2_10": {
+      "depth": 6,
+      "l2": 10
+    },
+    "cat_d6_l2_30": {
+      "depth": 6,
+      "l2": 30
+    },
+    "cat_d6_l2_100": {
+      "depth": 6,
+      "l2": 100
+    },
+    "cat_control_d5_l2_8": {
+      "depth": 5,
+      "l2": 8
+    }
+  },
+  "threads": 4,
+  "iterations": 2500,
+  "patience": 150,
+  "top_k": 3,
+  "seeds": [
+    2026,
+    2027,
+    2028
+  ],
+  "quick": false,
+  "logistic_C": [
+    0.01,
+    0.1,
+    1.0,
+    10.0
+  ]
+}

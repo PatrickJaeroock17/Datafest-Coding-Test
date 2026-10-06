@@ -1,0 +1,29 @@
+{
+  "modelos": [
+    {
+      "semilla": 2026,
+      "iteraciones": 713,
+      "auc_entrenamiento": 0.6433442354023923,
+      "media_probabilidad_diciembre": 0.14266858199904628,
+      "minimo_probabilidad_diciembre": 0.027337988155471633,
+      "maximo_probabilidad_diciembre": 0.40684183803678253
+    },
+    {
+      "semilla": 2027,
+      "iteraciones": 1166,
+      "auc_entrenamiento": 0.6502030702935555,
+      "media_probabilidad_diciembre": 0.14289495311876166,
+      "minimo_probabilidad_diciembre": 0.02290000849287601,
+      "maximo_probabilidad_diciembre": 0.4342223576271868
+    },
+    {
+      "semilla": 2028,
+      "iteraciones": 626,
+      "auc_entrenamiento": 0.6426040726441493,
+      "media_probabilidad_diciembre": 0.14263403963337581,
+      "minimo_probabilidad_diciembre": 0.02834341511723327,
+      "maximo_probabilidad_diciembre": 0.419581039998611
+    }
+  ],
+  "nota": "AUC de entrenamiento es diagnostico; no mide generalizacion ni autoriza cambiar receta. Diciembre sin etiquetas."
+}

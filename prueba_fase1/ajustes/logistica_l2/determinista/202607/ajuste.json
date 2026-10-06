@@ -1,0 +1,14 @@
+{
+  "C": 1.0,
+  "calibration_month": 202606,
+  "calibration_auc": 0.6095794285714285,
+  "calibration_candidates": [
+    {
+      "C": 1.0,
+      "auc": 0.6095794285714285
+    }
+  ],
+  "iterations": 86,
+  "train_auc": 0.6216020214243925,
+  "seconds": 1.2175100999884307
+}

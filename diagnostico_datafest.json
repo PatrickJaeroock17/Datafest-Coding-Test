@@ -1,0 +1,459 @@
+{
+  "interaction_monthly": [
+    {
+      "month": 202601,
+      "equal_fraction": 1.0,
+      "correlation": 1.0
+    },
+    {
+      "month": 202602,
+      "equal_fraction": 0.9093877551020408,
+      "correlation": 0.9067270867647004
+    },
+    {
+      "month": 202603,
+      "equal_fraction": 0.8189320388349515,
+      "correlation": 0.8077931567081036
+    },
+    {
+      "month": 202604,
+      "equal_fraction": 0.7282291666666667,
+      "correlation": 0.7317134788119972
+    },
+    {
+      "month": 202605,
+      "equal_fraction": 0.6369306930693069,
+      "correlation": 0.638364529039601
+    },
+    {
+      "month": 202606,
+      "equal_fraction": 0.5467632850241546,
+      "correlation": 0.5582218161307168
+    },
+    {
+      "month": 202607,
+      "equal_fraction": 0.4565979381443299,
+      "correlation": 0.4460757434725613
+    },
+    {
+      "month": 202608,
+      "equal_fraction": 0.3653731343283582,
+      "correlation": 0.36639320279006704
+    },
+    {
+      "month": 202609,
+      "equal_fraction": 0.27595959595959596,
+      "correlation": 0.2886396566979023
+    },
+    {
+      "month": 202610,
+      "equal_fraction": 0.18432692307692308,
+      "correlation": 0.18815461832836852
+    },
+    {
+      "month": 202611,
+      "equal_fraction": 0.094,
+      "correlation": 0.10180320538278727
+    },
+    {
+      "month": 202612,
+      "equal_fraction": 0.0026262626262626263,
+      "correlation": -0.002820606711790432
+    }
+  ],
+  "train_shape": [
+    110100,
+    25
+  ],
+  "test_shape": [
+    9900,
+    24
+  ],
+  "sample_shape": [
+    9900,
+    2
+  ],
+  "train_months": [
+    202601,
+    202602,
+    202603,
+    202604,
+    202605,
+    202606,
+    202607,
+    202608,
+    202609,
+    202610,
+    202611
+  ],
+  "test_months": [
+    202612
+  ],
+  "missing_train": 0,
+  "missing_test": 0,
+  "duplicate_client_month_train": 0,
+  "duplicate_client_month_test": 0,
+  "target_counts": {
+    "0": 93533,
+    "1": 16567
+  },
+  "unique_train_clients": 24628,
+  "test_clients_seen_in_train": 8061,
+  "rows_after_conversion": 0,
+  "clients_with_multiple_conversions": 0,
+  "sample_ids_exact_order": true,
+  "sample_columns": [
+    "id_cliente",
+    "prediccion"
+  ],
+  "feature_schema_matches": true,
+  "monthly": [
+    {
+      "mes": 202601,
+      "size": 10400,
+      "sum": 1521,
+      "mean": 0.14625
+    },
+    {
+      "mes": 202602,
+      "size": 9800,
+      "sum": 1543,
+      "mean": 0.15744897959183674
+    },
+    {
+      "mes": 202603,
+      "size": 10300,
+      "sum": 1527,
+      "mean": 0.14825242718446602
+    },
+    {
+      "mes": 202604,
+      "size": 9600,
+      "sum": 1473,
+      "mean": 0.1534375
+    },
+    {
+      "mes": 202605,
+      "size": 10100,
+      "sum": 1584,
+      "mean": 0.15683168316831683
+    },
+    {
+      "mes": 202606,
+      "size": 10350,
+      "sum": 1600,
+      "mean": 0.15458937198067632
+    },
+    {
+      "mes": 202607,
+      "size": 9700,
+      "sum": 1410,
+      "mean": 0.14536082474226805
+    },
+    {
+      "mes": 202608,
+      "size": 10050,
+      "sum": 1449,
+      "mean": 0.14417910447761195
+    },
+    {
+      "mes": 202609,
+      "size": 9900,
+      "sum": 1393,
+      "mean": 0.1407070707070707
+    },
+    {
+      "mes": 202610,
+      "size": 10400,
+      "sum": 1628,
+      "mean": 0.15653846153846154
+    },
+    {
+      "mes": 202611,
+      "size": 9500,
+      "sum": 1439,
+      "mean": 0.15147368421052632
+    }
+  ],
+  "numeric_summary": {
+    "edad": {
+      "count": 110100.0,
+      "mean": 46.359,
+      "std": 14.348,
+      "min": 22.0,
+      "25%": 34.0,
+      "50%": 46.0,
+      "75%": 59.0,
+      "max": 71.0
+    },
+    "ingresos": {
+      "count": 110100.0,
+      "mean": 65162.46,
+      "std": 21740.995,
+      "min": 18000.0,
+      "25%": 50148.621,
+      "50%": 64858.012,
+      "75%": 79838.143,
+      "max": 145700.073
+    },
+    "ratio_deuda_ingresos": {
+      "count": 110100.0,
+      "mean": 0.329,
+      "std": 0.167,
+      "min": 0.02,
+      "25%": 0.201,
+      "50%": 0.311,
+      "75%": 0.438,
+      "max": 0.95
+    },
+    "antiguedad_cuenta_meses": {
+      "count": 110100.0,
+      "mean": 88.898,
+      "std": 51.524,
+      "min": 1.0,
+      "25%": 44.0,
+      "50%": 88.0,
+      "75%": 133.0,
+      "max": 179.0
+    },
+    "numero_productos": {
+      "count": 110100.0,
+      "mean": 1.923,
+      "std": 1.074,
+      "min": 1.0,
+      "25%": 1.0,
+      "50%": 2.0,
+      "75%": 3.0,
+      "max": 5.0
+    },
+    "saldo_promedio": {
+      "count": 110100.0,
+      "mean": 26294.246,
+      "std": 16035.585,
+      "min": 300.0,
+      "25%": 14487.427,
+      "50%": 25692.025,
+      "75%": 37264.06,
+      "max": 90000.0
+    },
+    "dias_ultima_transaccion": {
+      "count": 110100.0,
+      "mean": 190.245,
+      "std": 104.951,
+      "min": 1.0,
+      "25%": 101.0,
+      "50%": 194.0,
+      "75%": 282.0,
+      "max": 364.0
+    },
+    "antiguedad_direccion_meses": {
+      "count": 110100.0,
+      "mean": 119.959,
+      "std": 68.795,
+      "min": 1.0,
+      "25%": 61.0,
+      "50%": 120.0,
+      "75%": 179.0,
+      "max": 239.0
+    },
+    "visitas_web_ultimos_90_dias": {
+      "count": 110100.0,
+      "mean": 8.012,
+      "std": 2.807,
+      "min": 0.0,
+      "25%": 6.0,
+      "50%": 8.0,
+      "75%": 10.0,
+      "max": 26.0
+    },
+    "distancia_sucursal_km": {
+      "count": 110100.0,
+      "mean": 10.158,
+      "std": 9.199,
+      "min": 0.213,
+      "25%": 4.331,
+      "50%": 7.487,
+      "75%": 12.718,
+      "max": 80.0
+    },
+    "dia_preferido_pago": {
+      "count": 110100.0,
+      "mean": 14.529,
+      "std": 8.05,
+      "min": 1.0,
+      "25%": 8.0,
+      "50%": 15.0,
+      "75%": 22.0,
+      "max": 28.0
+    },
+    "dias_ultima_interaccion": {
+      "count": 110100.0,
+      "mean": 190.159,
+      "std": 104.977,
+      "min": 1.0,
+      "25%": 100.0,
+      "50%": 194.0,
+      "75%": 282.0,
+      "max": 364.0
+    }
+  },
+  "categorical_counts": {
+    "ocupacion": {
+      "clerical": 33037,
+      "manual": 30650,
+      "professional": 24952,
+      "manager": 11375,
+      "self_employed": 10086
+    },
+    "region": {
+      "west": 27596,
+      "north": 24088,
+      "south": 22245,
+      "east": 19516,
+      "central": 16655
+    },
+    "canal_adquisicion": {
+      "web": 36403,
+      "mobile": 29068,
+      "branch": 17103,
+      "call_center": 16096,
+      "partner": 11430
+    },
+    "banda_riesgo": {
+      "low": 51495,
+      "medium": 35463,
+      "high": 23142
+    },
+    "tiene_tarjeta_credito": {
+      "true": 81687,
+      "false": 28413
+    },
+    "activo_movil": {
+      "true": 72195,
+      "false": 37905
+    },
+    "es_nuevo_cliente": {
+      "false": 88952,
+      "true": 21148
+    },
+    "tiene_prestamo": {
+      "false": 61001,
+      "true": 49099
+    },
+    "dispositivo_principal": {
+      "android": 46241,
+      "ios": 35007,
+      "web": 22410,
+      "otro": 6442
+    },
+    "tiene_seguro": {
+      "false": 67950,
+      "true": 42150
+    }
+  },
+  "unseen_test_categories": {
+    "ocupacion": [],
+    "region": [],
+    "canal_adquisicion": [],
+    "banda_riesgo": [],
+    "dispositivo_principal": []
+  },
+  "fraction_changed_between_observations": {
+    "edad": 0.0,
+    "ingresos": 0.0,
+    "ratio_deuda_ingresos": 0.0,
+    "antiguedad_cuenta_meses": 0.0,
+    "numero_productos": 0.0,
+    "saldo_promedio": 0.0,
+    "dias_ultima_transaccion": 0.0,
+    "ocupacion": 0.0,
+    "region": 0.0,
+    "canal_adquisicion": 0.0,
+    "banda_riesgo": 0.0,
+    "tiene_tarjeta_credito": 0.0,
+    "activo_movil": 0.0,
+    "es_nuevo_cliente": 0.0,
+    "tiene_prestamo": 0.0,
+    "antiguedad_direccion_meses": 0.0,
+    "visitas_web_ultimos_90_dias": 0.0,
+    "distancia_sucursal_km": 0.0,
+    "dispositivo_principal": 0.0,
+    "dia_preferido_pago": 0.0,
+    "tiene_seguro": 0.0,
+    "dias_ultima_interaccion": 0.665765024109138
+  },
+  "nov_to_dec_numeric_drift": [
+    {
+      "variable": "edad",
+      "nov_mean": 46.409789473684214,
+      "dec_mean": 46.404141414141414,
+      "standardized_mean_difference": -0.00039203701841233944
+    },
+    {
+      "variable": "ingresos",
+      "nov_mean": 65045.06881748666,
+      "dec_mean": 65341.78720699846,
+      "standardized_mean_difference": 0.013800668024977774
+    },
+    {
+      "variable": "ratio_deuda_ingresos",
+      "nov_mean": 0.3310408002451259,
+      "dec_mean": 0.3324383209272668,
+      "standardized_mean_difference": 0.008335860460344789
+    },
+    {
+      "variable": "antiguedad_cuenta_meses",
+      "nov_mean": 88.3741052631579,
+      "dec_mean": 89.01676767676767,
+      "standardized_mean_difference": 0.012562234433704092
+    },
+    {
+      "variable": "numero_productos",
+      "nov_mean": 1.8606315789473684,
+      "dec_mean": 1.8716161616161615,
+      "standardized_mean_difference": 0.01052357547575146
+    },
+    {
+      "variable": "saldo_promedio",
+      "nov_mean": 26087.454214008827,
+      "dec_mean": 26279.170299826445,
+      "standardized_mean_difference": 0.012071746713155395
+    },
+    {
+      "variable": "dias_ultima_transaccion",
+      "nov_mean": 194.1822105263158,
+      "dec_mean": 194.30727272727273,
+      "standardized_mean_difference": 0.001198437432330541
+    },
+    {
+      "variable": "antiguedad_direccion_meses",
+      "nov_mean": 120.18073684210526,
+      "dec_mean": 120.30666666666667,
+      "standardized_mean_difference": 0.0018350543205773629
+    },
+    {
+      "variable": "visitas_web_ultimos_90_dias",
+      "nov_mean": 8.015263157894736,
+      "dec_mean": 8.00929292929293,
+      "standardized_mean_difference": -0.0021342799390336002
+    },
+    {
+      "variable": "distancia_sucursal_km",
+      "nov_mean": 10.218557049771618,
+      "dec_mean": 10.161339722534017,
+      "standardized_mean_difference": -0.006133852011313713
+    },
+    {
+      "variable": "dia_preferido_pago",
+      "nov_mean": 14.573473684210526,
+      "dec_mean": 14.581818181818182,
+      "standardized_mean_difference": 0.0010361705811843813
+    },
+    {
+      "variable": "dias_ultima_interaccion",
+      "nov_mean": 194.36484210526316,
+      "dec_mean": 194.30727272727273,
+      "standardized_mean_difference": -0.0005529217783164425
+    }
+  ]
+}

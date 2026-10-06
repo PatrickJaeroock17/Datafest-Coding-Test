@@ -1,0 +1,91 @@
+{
+  "created_utc": "2026-10-06T05:30:21.359349+00:00",
+  "source_sha256": "44ce187785c276e27cecc7d4c2eac87ad988bb039d6c647dfea23554320b215a",
+  "base_sha256": "1e5698a7c215425cccf2e87f7e0f509f7da1418f71ce4bdb7c48b1f470c4e51f",
+  "data_sha256": "a714ebcd8587b2cc0f75ae642aa3e4ca5904eea02e249d969a06e8e7380e0567",
+  "versions": {
+    "python": "3.14.7",
+    "packages": {
+      "numpy": "2.4.4",
+      "pandas": "3.0.2",
+      "scikit-learn": "1.9.1",
+      "catboost": "1.2.10"
+    }
+  },
+  "months": [
+    202606,
+    202607,
+    202608,
+    202609,
+    202610,
+    202611
+  ],
+  "seeds": [
+    2026,
+    2027,
+    2028
+  ],
+  "features": [
+    "edad",
+    "ingresos",
+    "ratio_deuda_ingresos",
+    "antiguedad_cuenta_meses",
+    "numero_productos",
+    "saldo_promedio",
+    "dias_ultima_transaccion",
+    "ocupacion",
+    "region",
+    "canal_adquisicion",
+    "banda_riesgo",
+    "tiene_tarjeta_credito",
+    "activo_movil",
+    "es_nuevo_cliente",
+    "tiene_prestamo",
+    "antiguedad_direccion_meses",
+    "visitas_web_ultimos_90_dias",
+    "distancia_sucursal_km",
+    "dispositivo_principal",
+    "dia_preferido_pago",
+    "tiene_seguro",
+    "saldo_ingreso_mensual",
+    "saldo_por_producto",
+    "visitas_por_producto",
+    "productos_flags",
+    "movil_x_visitas",
+    "log_ingresos",
+    "log_saldo_promedio",
+    "log_dias_ultima_transaccion",
+    "observaciones_previas",
+    "meses_desde_observacion_previa",
+    "meses_desde_primera_observacion"
+  ],
+  "parameters": {
+    "depth": 3,
+    "l2_leaf_reg": 10,
+    "learning_rate": 0.03,
+    "iterations_max": 2500,
+    "patience": 150,
+    "threads": 4,
+    "class_weights": "uniformes"
+  },
+  "policies": [
+    "completo",
+    "ultimos6"
+  ],
+  "window_scope": "features_only; todas las filas anteriores",
+  "control": "original: cada semilla usa su propio argmax AUC en M-1, entrenado con meses <M-1",
+  "alternative": "mediana: mediana de los tres numeros originales (2026/2027/2028) seleccionados exclusivamente con M-1; numero comun para refit de las tres semillas con meses <M",
+  "seed_policy": "Siempre promedio uniforme de las tres probabilidades; ninguna semilla se elimina o elige retrospectivamente.",
+  "iteration_adoption": "Adoptar mediana solo si su promedio de AUC mensual del ensemble es >= control, disminuye la media de la desviacion entre semillas por mes y ningun mes pierde mas de 0.002 AUC; en otro caso conservar original. Regla operativa, no prueba de significancia.",
+  "history_adoption": "Comparar ultimos6 menos completo bajo la regla de iteraciones adoptada: mantener seis meses solo si el limite inferior del IC bootstrap pareado 95% de la diferencia de AUC medio es >0; si no, completo por menor dependencia de una ventana elegida.",
+  "iteration_decision_scope": "Para decidir regla de iteraciones usar ultimos6, la candidata inicial, meses junio-noviembre. Aplicar la misma regla adoptada a ambos historiales.",
+  "bootstrap": {
+    "replicates": 2000,
+    "seed": 20261006,
+    "unit": "cliente; mismas multiplicidades para todas sus filas, meses y modelos",
+    "metric": "media no ponderada de AUC mensuales",
+    "interval": "percentil 95%; condicional a predicciones fijas; sin ajuste por seleccion ni multiplicidad"
+  },
+  "november": "Ya consultado. Evaluacion retrospectiva, no ciega.",
+  "final": "Seleccion de arboles con enero-octubre -> noviembre; refit enero-noviembre; predict_proba diciembre; promedio tres semillas."
+}

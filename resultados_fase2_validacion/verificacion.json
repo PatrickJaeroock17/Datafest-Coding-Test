@@ -1,0 +1,24 @@
+{
+  "folds_verificados": 30,
+  "max_error_auc": 0.0,
+  "versiones": {
+    "python": "3.14.7",
+    "packages": {
+      "numpy": "2.4.4",
+      "pandas": "3.0.2",
+      "scikit-learn": "1.9.1",
+      "catboost": "1.2.10"
+    }
+  },
+  "fuente_candidata": "resultados_fase2/ajustes/ultimos6_clase_1/cat_d3_l2_10",
+  "fecha": "2026-10-06T05:30:08.120999+00:00",
+  "agosto_2028": {
+    "iteraciones": 55,
+    "auc_externo": 0.5741700794096117,
+    "auc_entrenamiento": 0.5838769829246835,
+    "auc_interno_julio": 0.6305995431563278,
+    "max_error_prediccion": 0.0,
+    "alineacion": "verificada por id_cliente/mes/objetivo/segmento",
+    "diagnostico": "Se reproduce el maximo interno a 55 y la caida tras refit. No hay evidencia de desalineacion ni off-by-one. La transferencia del numero de arboles entre muestras y semillas es inestable; no se identifica una causa unica del recorrido de boosting."
+  }
+}

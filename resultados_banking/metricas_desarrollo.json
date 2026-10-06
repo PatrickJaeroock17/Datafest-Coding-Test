@@ -1,0 +1,102 @@
+{
+  "config": {
+    "features": "banking",
+    "keep_interaction": false
+  },
+  "folds": [
+    {
+      "month": 202608,
+      "model": "catboost",
+      "auc": 0.6364409133096293,
+      "gini": 0.2728818266192585,
+      "iterations": 432
+    },
+    {
+      "month": 202608,
+      "model": "lightgbm",
+      "auc": 0.6373521014336289,
+      "gini": 0.2747042028672577,
+      "iterations": 236
+    },
+    {
+      "month": 202609,
+      "model": "catboost",
+      "auc": 0.6238282210224915,
+      "gini": 0.24765644204498294,
+      "iterations": 180
+    },
+    {
+      "month": 202609,
+      "model": "lightgbm",
+      "auc": 0.6241919685920576,
+      "gini": 0.24838393718411522,
+      "iterations": 70
+    },
+    {
+      "month": 202610,
+      "model": "catboost",
+      "auc": 0.632511615582751,
+      "gini": 0.2650232311655021,
+      "iterations": 475
+    },
+    {
+      "month": 202610,
+      "model": "lightgbm",
+      "auc": 0.6341718848558794,
+      "gini": 0.2683437697117588,
+      "iterations": 186
+    }
+  ],
+  "blend_candidates": [
+    {
+      "catboost_weight": 0.0,
+      "mean_auc": 0.6319053182938553,
+      "monthly_auc": [
+        0.6373521014336289,
+        0.6241919685920576,
+        0.6341718848558794
+      ]
+    },
+    {
+      "catboost_weight": 0.25,
+      "mean_auc": 0.6319866045895146,
+      "monthly_auc": [
+        0.63802417890163,
+        0.6238530306235708,
+        0.634082604243343
+      ]
+    },
+    {
+      "catboost_weight": 0.5,
+      "mean_auc": 0.6319010405353332,
+      "monthly_auc": [
+        0.6380973563909825,
+        0.6238033270350138,
+        0.6338024381800031
+      ]
+    },
+    {
+      "catboost_weight": 0.75,
+      "mean_auc": 0.6315612012630903,
+      "monthly_auc": [
+        0.6375888851738474,
+        0.6238369972079073,
+        0.6332577214075161
+      ]
+    },
+    {
+      "catboost_weight": 1.0,
+      "mean_auc": 0.6309269166382906,
+      "monthly_auc": [
+        0.6364409133096293,
+        0.6238282210224915,
+        0.632511615582751
+      ]
+    }
+  ],
+  "chosen_weight": 0.25,
+  "final_iterations": {
+    "catboost": 432,
+    "lightgbm": 186
+  }
+}

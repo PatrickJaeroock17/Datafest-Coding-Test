@@ -1,0 +1,14 @@
+{
+  "combinacion": {
+    "id": "ultimos6_clase_1",
+    "policy": "ultimos6",
+    "class_mode": "1"
+  },
+  "half_life": null,
+  "auc_media": 0.6298017327705403,
+  "gini_media": 0.2596034655410806,
+  "auc_std_mensual": 0.004114278871053255,
+  "delta_auc_vs_control": 0.00025797525121051823,
+  "criterio": "Mayor AUC no ponderado medio junio-octubre sobre d3/L2=10/2026; desempate por desviacion y orden del control.",
+  "advertencia": "Ganador de desarrollo, no evidencia independiente de mejora. Peso 1 puede ganar."
+}

@@ -1,0 +1,78 @@
+{
+  "created_utc": "2026-10-06T06:03:58.251148+00:00",
+  "choice_sha256": "22c3373fbb9d08c3ebefb1d3cecf46f168da0964c02e3bf18c1010f7370395b9",
+  "history": "completo",
+  "rule": "original",
+  "selected_original": {
+    "2026": 713,
+    "2027": 1166,
+    "2028": 626
+  },
+  "refit_rounds": {
+    "2026": 713,
+    "2027": 1166,
+    "2028": 626
+  },
+  "features": [
+    "edad",
+    "ingresos",
+    "ratio_deuda_ingresos",
+    "antiguedad_cuenta_meses",
+    "numero_productos",
+    "saldo_promedio",
+    "dias_ultima_transaccion",
+    "ocupacion",
+    "region",
+    "canal_adquisicion",
+    "banda_riesgo",
+    "tiene_tarjeta_credito",
+    "activo_movil",
+    "es_nuevo_cliente",
+    "tiene_prestamo",
+    "antiguedad_direccion_meses",
+    "visitas_web_ultimos_90_dias",
+    "distancia_sucursal_km",
+    "dispositivo_principal",
+    "dia_preferido_pago",
+    "tiene_seguro",
+    "saldo_ingreso_mensual",
+    "saldo_por_producto",
+    "visitas_por_producto",
+    "productos_flags",
+    "movil_x_visitas",
+    "log_ingresos",
+    "log_saldo_promedio",
+    "log_dias_ultima_transaccion",
+    "observaciones_previas",
+    "meses_desde_observacion_previa",
+    "meses_desde_primera_observacion"
+  ],
+  "n_training": 110100,
+  "n_prediction": 9900,
+  "test_sha256": "81197145e28d1602a0195d93487dc924ae438d8b0eed411cf56cac13d786126f",
+  "versions": {
+    "python": "3.14.7",
+    "packages": {
+      "numpy": "2.4.4",
+      "pandas": "3.0.2",
+      "scikit-learn": "1.9.1",
+      "catboost": "1.2.10"
+    }
+  },
+  "files": {
+    "modelo_2026.cbm": "95f508a6845a41311b1e379df48183bc8be36ad612e30bb5292e63495e68a5a9",
+    "modelo_2027.cbm": "ce3dc9e32ea060da14b1ee153b204a3dfdeb826c0bd4173d0bb9a361b2420b35",
+    "modelo_2028.cbm": "2c2e767e7b246f8e13f388388f9fdde34782a89525674a618249d31b36093f5b",
+    "parametros_2026.json": "827113fa5b9ae44807c63e669bff8d3ac2bdd6b760a98c47a5c8f2c27f8ceaae",
+    "parametros_2027.json": "786dfb31ba570bbc80394409119a2333b49a6721018f0b771810e3362ae19e36",
+    "parametros_2028.json": "4bc48b8acd6f604e679602ec9b65955d34abb67915dbc2b6be742b596f37b33a",
+    "predicciones_2026.csv": "fbca113d06170b4b08e33038edcec206a72f09bc5190a307644303ea6cf29a80",
+    "predicciones_2027.csv": "03335edcf88c7e472759a249733e2b3c0c7b7ec5bdcb7fe8efc4101c7458e751",
+    "predicciones_2028.csv": "858ce2061ec4adbc76e369d51f16ef0c2c39c5b9b493fae0b2a01b63da9ed07c",
+    "seleccion_2026.json": "664041c3ed8a57a39a2ec4cb54d992a3c10e9f881b7f328b258e5237165afefc",
+    "seleccion_2027.json": "abad9398699a7e189000d0261eb415269c7b4bfde143dc6bf7be49f6fb5e99d9",
+    "seleccion_2028.json": "7c702a2e9689ee1b280829abee8a6aa6c7c0c2df5bc51f0d238f05a6fec4eff8",
+    "submission_fase2_validada.csv": "5d37c7386e0a3387028055081ecdbe40a336d2d5358b7d4e2a5799dee1f33325"
+  },
+  "notas": "Sin etiquetas diciembre, sin metricas diciembre, no enviado a plataforma. Noviembre usado para seleccionar iteraciones."
+}

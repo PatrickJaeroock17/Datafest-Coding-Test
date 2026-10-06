@@ -1,0 +1,14 @@
+{
+  "iterations": 316,
+  "train_auc": 0.6379299864793084,
+  "seed": 2027,
+  "selection_month": 202609,
+  "n_refit": 90200,
+  "rule": "mediana",
+  "history": "completo",
+  "original_rounds": {
+    "2026": 316,
+    "2027": 393,
+    "2028": 316
+  }
+}

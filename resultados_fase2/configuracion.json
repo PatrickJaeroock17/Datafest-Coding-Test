@@ -1,0 +1,144 @@
+{
+  "protocol": "fase2_v1",
+  "python": "3.14.7",
+  "packages": {
+    "numpy": "2.4.4",
+    "pandas": "3.0.2",
+    "scikit-learn": "1.9.1",
+    "catboost": "1.2.10"
+  },
+  "script_sha256": "1e5698a7c215425cccf2e87f7e0f509f7da1418f71ce4bdb7c48b1f470c4e51f",
+  "data_jan_oct_sha256": "453cd57de5c2c730d05915bb8c34d47b9b6883aedb9216ed400d4c2dfea60b74",
+  "months": [
+    202606,
+    202607,
+    202608,
+    202609,
+    202610
+  ],
+  "combos": [
+    {
+      "id": "completo_clase_1",
+      "policy": "completo",
+      "class_mode": "1"
+    },
+    {
+      "id": "completo_clase_2",
+      "policy": "completo",
+      "class_mode": "2"
+    },
+    {
+      "id": "completo_clase_3",
+      "policy": "completo",
+      "class_mode": "3"
+    },
+    {
+      "id": "completo_clase_balanced",
+      "policy": "completo",
+      "class_mode": "balanced"
+    },
+    {
+      "id": "ultimos6_clase_1",
+      "policy": "ultimos6",
+      "class_mode": "1"
+    },
+    {
+      "id": "ultimos6_clase_2",
+      "policy": "ultimos6",
+      "class_mode": "2"
+    },
+    {
+      "id": "ultimos6_clase_3",
+      "policy": "ultimos6",
+      "class_mode": "3"
+    },
+    {
+      "id": "ultimos6_clase_balanced",
+      "policy": "ultimos6",
+      "class_mode": "balanced"
+    },
+    {
+      "id": "decay_clase_1",
+      "policy": "decay",
+      "class_mode": "1"
+    },
+    {
+      "id": "decay_clase_2",
+      "policy": "decay",
+      "class_mode": "2"
+    },
+    {
+      "id": "decay_clase_3",
+      "policy": "decay",
+      "class_mode": "3"
+    },
+    {
+      "id": "decay_clase_balanced",
+      "policy": "decay",
+      "class_mode": "balanced"
+    }
+  ],
+  "finalists": {
+    "cat_d3_l2_10": {
+      "depth": 3,
+      "l2": 10
+    },
+    "cat_d6_l2_10": {
+      "depth": 6,
+      "l2": 10
+    },
+    "cat_d4_l2_3": {
+      "depth": 4,
+      "l2": 3
+    }
+  },
+  "exploration_seed": 2026,
+  "seeds": [
+    2026,
+    2027,
+    2028
+  ],
+  "features": [
+    "edad",
+    "ingresos",
+    "ratio_deuda_ingresos",
+    "antiguedad_cuenta_meses",
+    "numero_productos",
+    "saldo_promedio",
+    "dias_ultima_transaccion",
+    "ocupacion",
+    "region",
+    "canal_adquisicion",
+    "banda_riesgo",
+    "tiene_tarjeta_credito",
+    "activo_movil",
+    "es_nuevo_cliente",
+    "tiene_prestamo",
+    "antiguedad_direccion_meses",
+    "visitas_web_ultimos_90_dias",
+    "distancia_sucursal_km",
+    "dispositivo_principal",
+    "dia_preferido_pago",
+    "tiene_seguro",
+    "saldo_ingreso_mensual",
+    "saldo_por_producto",
+    "visitas_por_producto",
+    "productos_flags",
+    "movil_x_visitas",
+    "log_ingresos",
+    "log_saldo_promedio",
+    "log_dias_ultima_transaccion",
+    "observaciones_previas",
+    "meses_desde_observacion_previa",
+    "meses_desde_primera_observacion"
+  ],
+  "history_window_scope": "features_only",
+  "history_window_months": 6,
+  "threads": 4,
+  "iterations": 2500,
+  "patience": 150,
+  "half_life": 3.0,
+  "quick": false,
+  "weighting": "sample_weight=temporal*class_multiplier, normalized to mean 1",
+  "balanced_definition": "unweighted training negatives / training positives; recalculated per fit"
+}

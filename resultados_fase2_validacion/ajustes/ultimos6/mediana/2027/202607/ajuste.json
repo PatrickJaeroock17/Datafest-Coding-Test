@@ -1,0 +1,17 @@
+{
+  "iterations": 727,
+  "train_auc": 0.6543097161674697,
+  "seed": 2027,
+  "selection_month": 202606,
+  "n_refit": 60550,
+  "rule": "mediana",
+  "history": "ultimos6",
+  "original_rounds": {
+    "2026": 727,
+    "2027": 606,
+    "2028": 1105
+  },
+  "reused_equal_features_from": "resultados_fase2_validacion\\ajustes\\completo\\mediana\\2027\\202607",
+  "feature_equivalence": "Exact equality of all 32 features for ALL refit and evaluation rows; same original rounds and labels; no approximation",
+  "source_prediction_sha256": "be90efacce8806129abfe1228ada6bbeaffcfffb9cb680b67e79eea925977ce9"
+}

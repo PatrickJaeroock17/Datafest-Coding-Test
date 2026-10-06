@@ -1,0 +1,14 @@
+{
+  "modelos": [
+    "cat_d3_l2_10",
+    "cat_d6_l2_10",
+    "cat_d4_l2_3"
+  ],
+  "semillas": [
+    2026,
+    2027,
+    2028
+  ],
+  "criterio": "AUC mensual medio de junio-octubre con primera semilla; desempate por menor desviacion y nombre.",
+  "advertencia": "Seleccion y comparacion de desarrollo; no es evaluacion independiente del ganador."
+}

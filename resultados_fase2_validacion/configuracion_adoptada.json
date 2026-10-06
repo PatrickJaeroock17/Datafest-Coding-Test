@@ -1,0 +1,30 @@
+{
+  "fecha": "2026-10-06T05:55:57.803345+00:00",
+  "regla_iteraciones": "original",
+  "historial": "completo",
+  "semillas": [
+    2026,
+    2027,
+    2028
+  ],
+  "prediccion": "promedio uniforme de tres predict_proba",
+  "diferencia_auc_mediana_vs_original": -3.49534626448896e-05,
+  "peor_diferencia_mensual": -0.0004153824263265493,
+  "dispersion_semillas_original": 0.006439891716971254,
+  "dispersion_semillas_mediana": 0.0007339899989808645,
+  "comparacion_historial": {
+    "comparacion": "ultimos6__original - completo__original",
+    "segmento": "todos",
+    "periodo": "junio_noviembre",
+    "delta_auc": 5.0667120114570675e-05,
+    "delta_gini": 0.00010133424022914135,
+    "ic95_auc_inferior": -0.00025072114516201113,
+    "ic95_auc_superior": 0.000357162322288143,
+    "ic95_gini_inferior": -0.0005014422903240223,
+    "ic95_gini_superior": 0.000714324644576286,
+    "replicas_validas": 2000,
+    "clientes_universo": 16980
+  },
+  "criterio": "Aplicacion literal de protocolo_fijado.json; evaluacion retrospectiva con seleccion, noviembre no ciego.",
+  "estado": "validacion_completa; final diciembre pendiente"
+}
